@@ -1,0 +1,45 @@
+<template id="bars">
+    <!-- HEAD OF THE MAIN WITH THE PROGRESS BAR AND THE HURRY UP POP UP ------------------------ -->
+    
+            <div id="topBar" class="topBar" style="display: flex;">
+    
+        <!-- PROGRESS BAR ---------------------------------- -->
+        
+                <div id="progressBar" class="progressBar">
+                    <div class="allProgressStep">
+                        <div class="step" id="step1">
+                            <p class="stepPoint" >1</p>
+                            <h4>Profile</h4>
+                        </div>
+                        <div class="step" id="step2">
+                            <p class="stepPoint">2</p>
+                            <h4>Address</h4>
+    
+                        </div>
+                        <div class="step" id="step3">
+                            <p class="stepPoint">3</p>
+                            <h4>Shipping</h4>
+                        </div>
+                        <div class="step" id="step4">
+                            <p class="stepPoint">4</p>
+                            <h4>Finish</h4>
+                        </div>
+                    </div>
+                </div>    
+        <!-- END OF PROGRESS BAR ---------------------------------- -->
+        
+        <!-- POP UP HURRY UP MESSAGE ---------------------------------- -->
+        
+                <div id="popUpDiv" class="popUpDiv">
+                    <p>The purchase will end in:</p>
+                    <p class="closeX" onclick="document.getElementById('popUpDiv').classList.add('hidden')">&#x2715</p>
+                    <h3 id="timerPopUp"></h3>
+                    <h2 id="hurry" class="hidden">Hurry Up!</h2>
+                </div>
+        
+        <!-- END POP UP HURRY UP MESSAGE ---------------------------------- -->
+        
+            </div>
+        
+    <!-- END HEAD OF THE MAIN WITH THE PROGRESS BAR AND THE HURRY UP POP UP ------------------------ -->
+    </template>

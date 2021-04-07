@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/step0style.css">
+    <link rel="stylesheet" href="css/step1style.css">
+    <link rel="stylesheet" href="css/step2style.css">
+    <link rel="stylesheet" href="css/step3style.css">
+    <link rel="stylesheet" href="css/step4style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Adidos Shop</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id='logo' src='design/Adidos_logo.png'></a>
+    </header>
+    <main>
+<!-- STEP 0 ------------------------ -->    
+        <div class="mainDivs step0MainDiv" id="step0MainDiv">
+                <section id="imgSection">
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <img id="imgSl1" src="img/whiteFront.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img id="imgSl2" src="img/whiteBack.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img id="imgSl3" src="img/whiteLeft.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img id="imgSl4" src="img/whiteRight.jpg" style="width:100%">
+                        </div>
+                        
+                        <a class="prev_arrow" onclick="plusSlides(-1)"></a>
+                        <a class="next_arrow" onclick="plusSlides(1)"></a>
+                        
+                        </div>
+                        <br>
+                        
+                        <div class="navBtns" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>  
+                        </div>
+                </section>
+                <section id="contentSection">
+                    <div id="contentDiv">
+                        <div class="desc_text">
+                            <h1>Illegal shirt</h1>
+                            <p>Please don't accept imitations or illegal copies of the brand. Any of these would be very bad T-shirts. Take this advice seriously, please.</p>
+                            <h3>Price</h3>
+                            <h2 id="productprice" value="100">100€</h2>
+                        </div>
+                        
+                        <div id="step0Form">
+                            <div class="sizeDivSelector">
+                                <h3>Size</h3>
+                                <select name="size" id="sizeSelect" onchange="shirtSize(value)">
+                                    <option value="XS">XS</option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+                            <div class="colorDivSelector">
+                                <h3>Color</h3>
+                                <button class='colorButton' id="colorButton1" value="white" onmouseover="changePicturesOnSlide(value)"  onclick="shirtColor(value)"></button>
+                                <button class='colorButton' id="colorButton2" value="blue" onmouseover="changePicturesOnSlide(value)" onclick="shirtColor(value)"></button>
+                                <button class='colorButton' id="colorButton3" value="black" onmouseover="changePicturesOnSlide(value)" onclick="shirtColor(value)"></button>
+                                <button class='colorButton' id="colorButton4" value="red" onmouseover="changePicturesOnSlide(value)" onclick="shirtColor(value)"></button>
+                                <button class='colorButton' id="colorButton5" value="green" onmouseover="changePicturesOnSlide(value)" onclick="shirtColor(value)"></button>
+                            </div>
+                        
+                        <button type="button" id="addToCartBtn" class="longBtn">Add To Cart</button>
+                        </div>
+                    </div>                
+                </section>
+        </div>
+<!-- END STEP 0 ------------------------ -->
+    </main>
+    <footer>
+    </footer>
+  <!-- <script src="js/collectData.js"></script> -->
+    <script src="js/slider.js"></script>
+    <script src="js/functions.js"></script>
+    <script type="module">
+        loadComponent('templates/template1.html');
+        loadComponent('templates/template2.html');
+        loadComponent('templates/template3.html');
+        loadComponent('templates/template4.html');
+        loadComponent('templates/templateBars.html');
+    </script>
+</body>
+</html>
