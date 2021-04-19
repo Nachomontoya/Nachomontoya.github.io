@@ -1,0 +1,118 @@
+.event-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--bg);
+  background-color: var(--textLightGray);
+  margin: 2% 5%;
+  padding: 3%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.event-text:hover {
+  color: var(--textLightGray);
+  background-color: var(--textDarkGray);
+}
+
+.event-container {
+  /* outline: 1px solid red !important; */
+  height:9vh;
+  overflow:auto;
+  height: 9vh;
+  overflow: auto;
+  overflow-x:hidden;
+  padding-bottom:10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--textLightGray);
+  border-radius: 10px;
+}
+
+/* EVENT TYPES */
+.event-type-2 {
+  background-color: var(--pink);
+  color: var(--bg);
+}
+
+.event-type-2:hover {
+  background-color: var(--red);
+  color: var(--bg);
+}
+
+.event-type-3 {
+  background-color: var(--blueTitle);
+}
+
+.event-type-3:hover {
+  background-color: var(--darkBlue);
+  color: var(--bg);
+}
+
+.event-type-4 {
+  background-color: var(--green);
+}
+
+.event-type-4:hover {
+  background-color: var(--darkGreen);
+  color: var(--bg);
+}
+
+/* EVENTS IN YEAR VIEW */
+
+/* .event-year-view{
+  position:absolute;
+  top:10%;
+  left:75%;
+  width:5px;
+  height:5px;
+  background-color:var(--pink);
+  border-radius:50%;
+} */
+
+.event-year-view {
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  width: 50%;
+  height: 5px;
+  background-color: var(--pink);
+}
+
+.labelRequiredTitle, .labelRequiredInitialDate, .labelRequiredEndDate, .labelRequiredReminder {
+  color: var(--red);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.apply-shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  background-color: var(--red) !important;
+}
