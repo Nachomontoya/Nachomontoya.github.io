@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>UNE LAS PAREJAS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo|Archivo+Narrow:600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/site.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+  </head>
+
+  <body>
+
+    <div id="welcome" class="welcome">
+      <h1>¡Hola!</h1>
+      <div class="welcome-buttons">
+        <button id="normal-play">empieza el juego</button>
+        <button id="relax-play">modo relax</button>
+      </div>
+    </div>
+
+    <!-- HEADER DE CONTADORES -->
+
+    <header id="header" class="header">
+
+      <div id="header-elementos" class="header-elementos">
+
+        <div class="contador-item">
+          <h4 class="titulo">movimientos</h4>
+          <div class="contenedor">
+            <span id="mov">00</span>/<span id="max-mov">00</span>
+          </div>
+        </div>
+
+        <div class="contador-item">
+          <h4 class="titulo">TIEMPO</h4>
+          <div class="contenedor">
+            <span id="minutos">00</span>:<span id="segundos">00</span>
+          </div>
+        </div>
+
+        <div class="contador-item">
+          <h4 class="titulo">nivel</h4>
+          <div class="contenedor">
+            <span id="nivel">01</span>
+          </div>
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- SONIDOS -->
+    <audio src="sound/acierto.mp3" id="sonido_acierto" class="sonido" preload="auto"></audio>
+    <audio src="sound/error.mp3" id="sonido_error" class="sonido" preload="auto"></audio>
+    <audio src="sound/carta2.mp3" id="sonido_carta" class="sonido" preload="auto"></audio>
+
+    <!-- ELEMENTOS DE LA MESA -->
+    
+    <div id="mesa" class="mesa"></div>
+
+    <!-- PANTALLAS DE FINALIZACIÓN -->
+
+    <div id="endscreen" class="endscreen">
+      <div class="whitebox">
+        <p class="message">¡Bien hecho!</p>
+        <button class="next">siguiente nivel</button>
+        <span class="repeat">Reiniciar</span>
+      </div>
+    </div>
+
+    <div id="endscreen-nomove" class="endscreen">
+      <div class="whitebox">
+        <p class="message">¡Vamos, no puedes ser tan malo!</p>
+        <button class="reiniciar">Inténtalo otra vez</button>
+      </div>
+    </div>
+
+    <div id="endscreen-notime" class="endscreen">
+      <div class="whitebox">
+        <p class="message">¡Eres lentísimo!</p>
+        <button class="reiniciar">Inténtalo otra vez</button>
+      </div>
+    </div>
+
+    <div id="endscreen" class="endscreen">
+      <div class="whitebox">
+        <p class="emoji">🏆</p>
+        <p class="enhorabuena">¡Enhorabuena!</p>
+        <p class="complete">🌟 Has completado todos los niveles 🌟</p>
+        <span class="repeat">Vuelve a empezar</span>
+      </div>
+    </div>
+
+
+
+    <!-- SCRIPTS -->
+
+    <script src="js/variables.js"></script>
+    <script src="js/niveles.js"></script>
+    <script src="js/cronometro.js"></script>
+    <script src="js/contador.js"></script>
+    <script src="js/baraja-reparte.js"></script>
+    <script src="js/descubre-compara.js"></script>
+    <script src="js/acierto-error.js"></script>
+    <script src="js/finalizar.js"></script>
+    <script src="js/iniciar.js"></script>
+  </body>
+</html>
