@@ -2,6 +2,8 @@ function iniciar() {
   movimientos = 0
   reparteTarjetas(niveles[nivelActual].tarjetas);
   maximoMovimientos();
+  document.querySelector('#minutos').innerHTML = niveles[nivelActual].minutos;
+  document.querySelector('#segundos').innerHTML = niveles[nivelActual].segundos;
   iniciaCronometro ()
 
   document.querySelectorAll(".endscreen").forEach(function(elemento) {

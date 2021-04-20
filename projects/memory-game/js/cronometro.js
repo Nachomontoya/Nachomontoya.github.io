@@ -10,6 +10,7 @@ function iniciaCronometro() {
     minutos = niveles[nivelActual].minutos
 
     function actualizaCronometro() {
+
         segundos--
         if (segundos < 0) {
             segundos = 59
@@ -23,9 +24,9 @@ function iniciaCronometro() {
             segundosTexto = "0" + segundos
         }
 
-        if (minutos < 10) {
-            minutosTexto = "0" + minutos
-        }
+        // if (minutos < 10) {
+        //     minutosTexto = "0" + minutos
+        // }
 
         if (minutos == 0 && segundos == 0) {
             paraCrono()

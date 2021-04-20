@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,7 +108,8 @@ h4 {
 /* ELEMENTOS DE LA MESA ----------- */
 
 .mesa {
-  max-width: 55%;
+  max-width: 50%;
+  height: 50%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -287,4 +288,22 @@ h4 {
 
 .sonido {
   display: none;
+}
+
+@media (max-width: 750px) {
+  .mesa {
+    width: max-content;
+    max-width: 90%;
+    height: max-content;
+    max-height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .terminado {
+    display: none;
+  }
 }
